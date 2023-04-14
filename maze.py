@@ -39,7 +39,7 @@ while runGame:
 
     for i,row in enumerate(pixels):
         for j,column in enumerate(pixels):
-            if not pixels[i][j] > threshhold:
+            if pixels[i][j] <= threshhold:
                 gfxdraw.pixel(screen, i, j, (255,255,255))
 
     pygame.display.flip()
